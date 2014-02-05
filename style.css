@@ -1,0 +1,9 @@
+body {
+  width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-trasnform: translatex(-50%);
+}
+
