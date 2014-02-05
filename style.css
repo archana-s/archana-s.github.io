@@ -60,4 +60,31 @@ div {
     padding-bottom: 5px;
 }
 
+.innershadow-rect {
+    fill:rgb(103, 102, 106);
+}
+
+.innershadow-circle {
+    fill: rgb(103, 102, 106);
+}
+
+.vert-center {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 3px;
+    position: relative;
+}
+
+.vert-center .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    margin-left: 10px;
+}
+
 
