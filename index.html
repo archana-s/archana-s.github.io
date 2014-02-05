@@ -8,12 +8,26 @@
 		
         <section>
           <div class="title">SRCSET demo</div>
-          <div class="subtitle">Big map is displayed on a HD monitor.</div>
+          <div class="subtitle">Different image is displayed on a HD monitor.</div>
           <div class="notes">Currently only supported by <a href="http://nightly.webkit.org/">nightly build of webkit</a></div>
 	      <div class="contents">
           	<img src="images/smallimg.jpg" srcset="images/bigimage.jpg 2x" style="width: 200px; height: 200px;"/>
           </div>
 	    </section>
+        
+        <section>
+            <div class="title"> Horizontal Center Text in SVG </div>
+		    <div class="notes">
+                <div>Step1 : Draw a rect for the width of the space</div> 
+		        <div>Step2 : Place the text at the center of the rect and use text-anchor :middle property</div>
+            </div>
+		    <div class="contents">
+                <svg width="350" height="100">
+                  <rect x="0" y="50" width="350" height="13" fill="transparent"></rect>
+                  <text class="brandText" x="175" y="50">Text to be centered</text>
+		        </svg>
+            </div>
+        </section>
         
 	</body>
 </html>
