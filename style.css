@@ -8,3 +8,15 @@ body {
   -o-trasnform: translatex(-50%);
 }
 
+section {
+  margin-left: 10px;	
+}
+
+.contents {
+  margin-left: 15px;
+}
+
+.notes {
+  font-size: 12px;
+  font-family: 'Courier New';
+}
