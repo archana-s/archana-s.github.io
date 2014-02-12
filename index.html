@@ -55,7 +55,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	width="200" height="200">
      <defs>
-		<filter id="innershadow" x0="-50%" y0="-50%" width="200%" height="200%">
+		<filter id="innerglow" x0="-50%" y0="-50%" width="200%" height="200%">
 			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"></feGaussianBlur>
 			<feOffset dy="2" dx="3"></feOffset>
 			<feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
@@ -76,7 +76,7 @@
        
 	</defs>
       
-      <circle cx="100" cy="100" r="40" filter="url(#innershadow)" fill="tan"/>
+      <circle cx="100" cy="100" r="40" filter="url(#innerglow)" fill="tan"/>
 	
 </svg>
 	
