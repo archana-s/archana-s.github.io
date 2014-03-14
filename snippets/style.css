@@ -1,0 +1,124 @@
+body {
+  background-color: rgb(51, 51, 51);
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  font-family: "andale mono";
+  color: rgb(252, 255, 216);
+}
+
+.main-contents {
+  width: 800px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translatex(-50%);
+}
+
+a, a:link, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.snippet {
+  margin: 7px 0;
+}
+
+.snippet a {
+  font-family: "Courier New";
+  color: #FFF;
+}
+
+.heading {
+  width: 100%;
+  height: 75px;
+  background-color: rgb(35, 35, 35);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.heading .text {
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 2px rgba(20, 20, 20, 1);
+}
+
+section {
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px dotted rgb(75, 75, 75);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: rgb(95, 174, 179);
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.contents {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.notes {
+  font-size: 14px;
+}
+
+.brandText {
+    text-anchor: middle;
+    fill: rgb(170, 222, 154);
+}
+
+svg {
+    background-color: rgb(65, 65, 65);
+    border-radius: 3px;
+}
+
+div {
+    padding-bottom: 5px;
+}
+
+.innershadow-rect {
+    fill:rgb(103, 102, 106);
+}
+
+.innershadow-circle {
+    fill: rgb(103, 102, 106);
+}
+
+.vert-center {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 3px;
+    position: relative;
+}
+
+.vert-center .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    margin-left: 10px;
+}
