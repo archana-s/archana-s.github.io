@@ -8,7 +8,21 @@ body {
   -o-transform: translatex(-50%);
   font-family: "andale mono";
   color: rgb(252, 255, 216);
-  background-color: rgb(51, 51, 51);    
+  background-color: rgb(51, 51, 51);
+}
+
+a, a:link, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.snippet {
+  margin: 7px 0;
+}
+
+.snippet a {
+  font-family: "Courier New";
+  color: #FFF;
 }
 
 .heading {
@@ -86,5 +100,3 @@ div {
     -ms-transform: translateY(-50%);
     margin-left: 10px;
 }
-
-
