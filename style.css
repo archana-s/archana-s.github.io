@@ -1,0 +1,198 @@
+
+/**
+  Common classes
+*/
+.horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+
+.ft-grey {
+    color: rgb(47, 53, 62);
+}
+
+.ft-20 {
+  font-size: 20px;
+}
+
+.ft-24 {
+  font-size: 24px;
+}
+
+.ft-16 {
+  font-size: 16px;
+}
+
+.ft-newscycle {
+  font-family: "News Cycle", sans-serif;
+}
+
+.ft-white {
+  color: white;
+}
+
+.ft-bold {
+  font-weight: 600;
+}
+
+.flexbox-row {
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21+ */
+  display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
+  flex-direction: row;
+  -webkit-flex-direction: row;
+
+  /* vertical align */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 0.25s;
+  -webkit-transition: opacity 0.25s;
+}
+
+.show {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+
+/***
+ Special CSS
+
+ **/
+
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.contents {
+  width: 800px;
+  height: auto;
+}
+
+.title, .work {
+  width: 100%;
+  text-align: center;
+}
+
+.work {
+  margin-top: 7px;
+}
+
+.title span {
+  border-bottom: 2px solid rgb(82, 193, 121);
+}
+
+.social {
+  margin-top: 30px;
+}
+
+.git, .linkedin, .twitter {
+  width: 250px;
+  height: 55px;
+  background-color: rgba(255, 190, 122, 0.85);
+  text-align: center;
+  position: relative;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.git:hover, .linkedin:hover, .twitter:hover {
+  background-color: rgba(255, 190, 122, 1);
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.git a, .linkedin a, .twitter a {
+  margin: auto;
+}
+
+.git span, .linkedin span, .twitter span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+
+.portfolio {
+  margin-top: 35px;
+}
+
+.portfolio .container {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(82, 193, 121, 0.75);
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.portfolio .container img {
+  width: 200px;
+  height: 200px;
+}
+
+.portfolio .container .text {
+  width: 150px;
+  height: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 800px;
+  margin-bottom: 10px;
+}
+
+.footer .tag a {
+  height: 40px;
+  width: 200px;
+  border-bottom: 1px solid rgb(82, 193, 121);
+}
+
+/**
+Resets
+**/
+
+a, a:hover, a:focus, a:visited {
+  text-decoration: none;
+}

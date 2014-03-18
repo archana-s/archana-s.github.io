@@ -2,18 +2,89 @@
   <head>
     <title>Portfolio </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="header">
-      <div class="title">Archana Sankaranarayanan</div>
+      <div class="title ft-newscycle ft-24 ft-grey ft-bold">
+        <span>Archana Sankaranarayanan</span>
+      </div>
+      <div class="work ft-newscycle ft-20 ft-grey">
+        Front End Engineer
+      </div>
     </div>
-    <div class="contents">
-      <ul>
+    <div class="contents horizontal-center">
+      <!--<ul>
         <li> <a href="./snippets/index.html">HTML5 Snippets</a> </li>
         <li> <a href="./floatingShapes/index.html"> Floating Circles using HTML Canvas </a></li>
         <li><a href="http://kaleidoscope.nodejitsu.com/"> Kaleidoscope using HTML Canvas and CSS3 Animations </a> </li>
-    </ul>
+    </ul>-->
+
+      <div class="social flexbox-row">
+        <a href="https://github.com/archana-s" class="ft-newscycle ft-16 ft-grey"><div class="git"> <span>Git</span> </div></a>
+        <a href="http://www.linkedin.com/in/archanasankaranarayanan" class="ft-newscycle ft-16 ft-grey"><div class="linkedin"> <span> Linkedin </span> </div></a>
+        <a href="https://twitter.com/archana_june" class="ft-newscycle ft-16 ft-grey"><div class="twitter"> <span> Twitter </span> </div></a>
+      </div>
+
+      <div class="portfolio flexbox-row">
+
+        <a href="http://kaleidoscope.nodejitsu.com/">
+          <div class="container">
+            <img class="kaleidoscope absolute-center" src="./images/kaleidoscope.png">
+            <div class="text ft-white ft-16 ft-bold  ft-newscycle hide absolute-center">
+              <span>Kaleidoscope - Canvas/CSS3</span>
+            </div>
+          </div>
+        </a>
+
+      <a href="./floatingShapes/index.html">
+        <div class="container">
+          <img class="floaties absolute-center" src="./images/floaties.png">
+          <div class="text ft-white ft-16 ft-bold ft-newscycle hide absolute-center">
+            <span>Floating Circles - Canvas/Kinetic.js</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="./snippets/index.html">
+        <div class="container">
+          <img class="snippets absolute-center" src="./images/snippets.png">
+          <div class="text ft-white ft-16 ft-bold ft-newscycle hide absolute-center">
+            <span>HTML Snippets</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
     </div>
-    <div class="footer"></div>
+    <div class="footer horizontal-center">
+      <div class="tag">
+        <a href="mailto:archana.june@gmail.com" class="ft-grey ft-16 ft-newscycle">Contact me</a>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('.container').bind('mouseover', function(){
+          var isHidden = $(this).find('.text').hasClass('hide');
+          if (isHidden) {
+            $(this).find('.text').addClass('show');
+            $(this).find('.text').removeClass('hide');
+          }
+          else {
+            $(this).find('.text').addClass('hide');
+            $(this).find('.text').removeClass('show');
+          }
+        });
+
+        $('.container').bind('mouseout', function(){
+            $(this).find('.text').toggleClass('show');
+            $(this).find('.text').toggleClass('hide');
+        });
+      });
+    </script>
+
   </body>
 </html>
