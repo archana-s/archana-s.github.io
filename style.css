@@ -176,6 +176,17 @@
   height: 50px;
 }
 
+.twitter-feed {
+  position: relative;
+  display: none;
+}
+
+.twitter-timeline {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -195,4 +206,24 @@ Resets
 
 a, a:hover, a:focus, a:visited {
   text-decoration: none;
+}
+
+
+/*
+TO be REMOVED
+*/
+.in {
+  display: none;
+}
+
+.test-menu {
+  position: fixed;
+  z-index: 1033;
+  top: 0;
+  left: 0;
+  width: 25px;
+  min-height: 50px;
+  height: auto;
+  background-color: tan;
+  opacity: 0.7;
 }
