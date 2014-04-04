@@ -58,19 +58,6 @@
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
 
-    <div class="test-menu in">
-      <ul>
-        <li> Test1 </li>
-        <li> Test1 </li>
-        <li> Test1 </li>
-        <li> Test1 </li>
-      </ul>
-    </div>
-
-    <div class="testing">
-      <a href="collapsed">Open Test Menu</a>
-    </div>
-
     <div class="footer horizontal-center">
       <div class="tag">
         <a href="mailto:archana.june@gmail.com" class="ft-grey ft-16 ft-newscycle">Contact me</a>
@@ -97,14 +84,6 @@
             $(this).find('.text').toggleClass('show');
             $(this).find('.text').toggleClass('hide');
         });
-
-        $('.testing').click(function(evt){
-           evt.preventDefault();
-           $(this).toggleClass('collapsed');
-           $('.test-menu').toggleClass('in');
-           $('.test-menu').toggleClass('collapsed');
-        });
-
       });
     </script>
 
