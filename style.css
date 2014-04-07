@@ -77,6 +77,8 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
+  flex-flow: row wrap;
 }
 
 .hide {
@@ -140,6 +142,10 @@
   transition: opacity 1s;
 }
 
+.git:hover span, .linkedin:hover span, .twitter:hover span {
+  border-bottom: 1px solid rgb(82, 193, 121);
+}
+
 .git a, .linkedin a, .twitter a {
   margin: auto;
 }
@@ -155,6 +161,12 @@
 
 .portfolio {
   margin-top: 35px;
+}
+
+.portfolio a {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
 }
 
 .portfolio .container {
@@ -191,7 +203,7 @@
   position: absolute;
   bottom: 0;
   width: 800px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .footer .tag a {
@@ -207,4 +219,3 @@ Resets
 a, a:hover, a:focus, a:visited {
   text-decoration: none;
 }
-
