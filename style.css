@@ -43,6 +43,18 @@
   font-size: 16px;
 }
 
+.ft-12 {
+  font-size: 12px;
+}
+
+.ft-11 {
+  font-size: 11px;
+}
+
+.ft-grey {
+  color: rgb(50, 50, 50);
+}
+
 .ft-newscycle {
   font-family: "News Cycle", sans-serif;
 }
@@ -51,8 +63,16 @@
   color: white;
 }
 
+.ft-black {
+  color: black;
+}
+
 .ft-bold {
   font-weight: 600;
+}
+
+.bg-orange {
+  background-color: rgba(255, 190, 122, 0.85)
 }
 
 .flexbox-row {
@@ -143,7 +163,7 @@
 }
 
 .git:hover span, .linkedin:hover span, .twitter:hover span {
-  border-bottom: 1px solid rgb(82, 193, 121);
+  border-bottom: 2px solid rgb(82, 193, 121);
 }
 
 .git a, .linkedin a, .twitter a {
@@ -188,15 +208,23 @@
   height: 50px;
 }
 
-.twitter-feed {
+.jsbins {
+  margin-top: 20px;
   position: relative;
-  display: none;
 }
 
-.twitter-timeline {
-  position: absolute;
-  top: 0;
-  left: 0;
+.jsbins .title {
+  border-bottom: 2px solid rgb(82, 193, 121);
+}
+
+.jsbins ul {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+}
+
+.jsbins li {
+  list-style-type: none;
+  display: block;
 }
 
 .footer {
